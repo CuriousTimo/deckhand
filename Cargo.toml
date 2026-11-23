@@ -27,6 +27,9 @@ strum = ["dep:strum"]
 
 [dev-dependencies]
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "time"] }
+# examples/maker_connect_demo.rs only (FORK.md): text on the keys, PNG pictures of the views
+ab_glyph = { version = "0.2", features = ["variable-fonts"] }
+image = { version = "0.25", default-features = false, features = ["png"] }
 
 [package.metadata.docs.rs]
 all-features = true
