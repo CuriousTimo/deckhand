@@ -1,6 +1,6 @@
-# This fork
+# deckhand
 
-CuriousTimo's fork of [OpenActionAPI/rust-elgato-streamdeck](https://github.com/OpenActionAPI/rust-elgato-streamdeck),
+**deckhand** is CuriousTimo's fork of [OpenActionAPI/rust-elgato-streamdeck](https://github.com/OpenActionAPI/rust-elgato-streamdeck),
 the one Stream Deck implementation for all of CuriousTimo's projects (Maker Connect, Hive Rail, ...).
 
 - **`main`**: an exact copy of upstream `main`, fast-forwarded every day by
@@ -10,7 +10,9 @@ the one Stream Deck implementation for all of CuriousTimo's projects (Maker Conn
 - **New upstream commits** arrive as one pull request `main` → `curioustimo`, with a build check of
   the merge. A fix that is useful to everyone is offered upstream as well, so this list stays short.
 - **Using it**: pin a commit of `curioustimo`:
-  `elgato-streamdeck = { git = "https://github.com/CuriousTimo/rust-elgato-streamdeck", rev = "<commit>" }`
+  `deckhand = { package = "elgato-streamdeck", git = "https://github.com/CuriousTimo/deckhand", rev = "<commit>" }`,
+  so the code says `use deckhand::...`. The package name in `Cargo.toml` stays `elgato-streamdeck`, as upstream,
+  so upstream's releases merge without conflicts (`deckhand` on crates.io is someone else's crate; this one is not published).
 - **Licence**: MPL-2.0, as upstream. Changed files stay MPL-2.0 and are published here.
 
 ## Changes against upstream
