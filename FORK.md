@@ -16,6 +16,12 @@ the one Stream Deck implementation for all of CuriousTimo's projects (Maker Conn
   so upstream's releases merge without conflicts (`deckhand` on crates.io is someone else's crate; this one is not published).
 - **Licence**: MPL-2.0, as upstream. Changed files stay MPL-2.0 and are published here.
 
+## Used in
+
+| Project | How | State |
+|---|---|---|
+| [Maker Connect](https://github.com/CuriousTimo/Maker-Connect) | a Stream Deck beside the machines: machine status and actions, lockers, a weigh station at the desk ([#190](https://github.com/CuriousTimo/Maker-Connect/issues/190), [wiki](https://github.com/CuriousTimo/Maker-Connect/wiki/Design:-Stream-Deck)) | **idea, work in progress**: a demo with made-up data, [`examples/maker_connect_demo.rs`](examples/maker_connect_demo.rs); not in Maker Connect's code yet |
+
 ## Changes against upstream
 
 | Change | Files | Why |
