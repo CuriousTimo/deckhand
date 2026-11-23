@@ -21,7 +21,7 @@ the one Stream Deck implementation for all of CuriousTimo's projects (Maker Conn
 
 | Project | How | State |
 |---|---|---|
-| [Maker Connect](https://github.com/CuriousTimo/Maker-Connect) | a Stream Deck beside the machines: machine status and actions, lockers, a weigh station at the desk ([#190](https://github.com/CuriousTimo/Maker-Connect/issues/190), [wiki](https://github.com/CuriousTimo/Maker-Connect/wiki/Design:-Stream-Deck)) | **idea, work in progress**: a demo with made-up data, [`examples/maker_connect_demo.rs`](examples/maker_connect_demo.rs); not in Maker Connect's code yet |
+| [Maker Connect](https://github.com/CuriousTimo/Maker-Connect) | a Stream Deck for quick management and overview: machine status and actions, lockers, a weigh station at the desk ([#190](https://github.com/CuriousTimo/Maker-Connect/issues/190), [wiki](https://github.com/CuriousTimo/Maker-Connect/wiki/Design:-Stream-Deck)) | **idea, work in progress**: a demo with made-up data, [`examples/maker_connect_demo.rs`](examples/maker_connect_demo.rs); not in Maker Connect's code yet |
 
 ## Changes against upstream
 
