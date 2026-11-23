@@ -8,7 +8,8 @@ the one Stream Deck implementation for all of CuriousTimo's projects (Maker Conn
 - **`curioustimo`** (default branch): our changes on top. Every change that differs from upstream is
   listed below, with why.
 - **New upstream commits** arrive as one pull request `main` → `curioustimo`, with a build check of
-  the merge. A fix that is useful to everyone is offered upstream as well, so this list stays short.
+  the merge. A fix that is useful to everyone can also be offered upstream (the owner decides), so this
+  list stays short.
 - **Using it**: pin a commit of `curioustimo`:
   `deckhand = { package = "elgato-streamdeck", git = "https://github.com/CuriousTimo/deckhand", rev = "<commit>" }`,
   so the code says `use deckhand::...`. The package name in `Cargo.toml` stays `elgato-streamdeck`, as upstream,
