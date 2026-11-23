@@ -21,3 +21,4 @@ the one Stream Deck implementation for all of CuriousTimo's projects (Maker Conn
 | Change | Files | Why |
 |---|---|---|
 | This file and the workflow that follows upstream | `FORK.md`, `.github/workflows/follow-upstream.yml` | keeping up with upstream; no change to the library |
+| A key test example (owner, 2026-11-23: "zet het testprogramma als example in deckhand") | `examples/key_test.rs` | every key its colour and number, white while held, key 0/1 brightness, last key clears and stops; tested on an Original V2 (fw 1.03.000) on macOS; no change to the library |
