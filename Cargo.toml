@@ -8,7 +8,9 @@ repository = "https://github.com/OpenActionAPI/rust-elgato-streamdeck"
 license = "MPL-2.0"
 
 [dependencies]
-hidapi = "2.6"
+# Without hidapi's default features, so a project can pick its own hidapi backend (FORK.md); the
+# feature `hidapi-default-backend` below gives hidapi's defaults back and is on by default.
+hidapi = { version = "2.6", default-features = false }
 image = { version = "0.25", default-features = false, features = [
   "bmp",
   "jpeg",
@@ -17,6 +19,12 @@ tokio = { version = "1", optional = true }
 strum = { version = "0.27", features = ["derive"], optional = true }
 
 [features]
+default = ["hidapi-default-backend"]
+# hidapi's own default backends (its `default` feature). A project that picks another hidapi backend
+# (Maker Connect: `linux-native-basic-udev`, `windows-native`) uses deckhand with
+# `default-features = false` and turns that backend on in its own hidapi dependency; hidapi allows
+# exactly one backend per system.
+hidapi-default-backend = ["hidapi/linux-static-hidraw", "hidapi/illumos-static-libusb"]
 async = [
   "tokio",
   "tokio/sync",
